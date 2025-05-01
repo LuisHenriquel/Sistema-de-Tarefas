@@ -9,12 +9,12 @@ public class ListarTarefa {
         try {
             BufferedReader ler = new BufferedReader(new FileReader("tarefas.txt"));
             String linha;
-            int contador = 1;
+            
 
             System.out.println("Tarefas cadastradas");
             while ((linha = ler.readLine()) != null) {
                 System.out.println( " " + linha);
-                contador++;
+                
             }
 
             ler.close();
